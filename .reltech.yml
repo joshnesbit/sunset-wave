@@ -1,0 +1,23 @@
+# .reltech.yml — see github.com/The-Relational-Technology-Project/watcher
+version: 2
+
+project:
+  name: "sunset-wave"
+  description: "Built with Relational Builder"
+
+lineage:
+  studio: "rt"
+  studio_name: "Relational Tech Studio"
+  note: "Began as a spoken conversation, distilled by Dream Recorder on 2026-09-14, built with Relational Builder."
+
+tags:
+  - community-tool
+
+watch:
+  branches: ["main"]
+  signals: ["releases", "prs", "commits"]
+  threshold: "minor"
+
+preferences:
+  summarize_commits: true
+  public_link: true
