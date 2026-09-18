@@ -62,13 +62,15 @@
 </header>
 
 <main>
+  <p class="scrollhint">Swipe the map sideways to see every avenue. Tap a block to host it or say hi.</p>
   <div class="mapwrap">
-    <div class="grid" id="grid" role="group" aria-label="Map of Outer Sunset blocks"></div>
+    <div class="grid" id="grid" role="group" aria-label="Map of Outer Sunset blocks. Columns are avenues from 48th by the ocean to 19th. Rows are the stretch between two cross streets, Lincoln at the top to Sloat at the bottom."></div>
   </div>
   <p class="legend">
-    <span class="key key-host"></span> a block with a host
-    <span class="key key-open"></span> a neighbor ready to help, no host yet
-    <span class="key key-empty"></span> waiting
+    <span><span class="key key-host"></span> a block with a host</span>
+    <span><span class="key key-open"></span> a neighbor ready to help, no host yet</span>
+    <span><span class="key key-empty"></span> waiting for someone</span>
+    <span><span class="key key-ground"></span> Sunset Blvd and the reservoir</span>
   </p>
 
   <section class="roster" id="roster" aria-label="Blocks that said yes"></section>
@@ -79,6 +81,11 @@
   <p class="fine"><a href="./about.html">About Sunset Wave</a> · Sponsored by the <a href="https://sunsetsocialclub.org">Sunset Social Club</a> · open to any Outer Sunset resident, membership not required · more neighborhood goings-on at <a href="https://outersunset.today">outersunset.today</a></p>
   <p class="fine muted">Example blocks are showing. <button class="linkbtn" id="reset">Clear them</button> before you share this.</p>
 </footer>
+
+<div class="stickybar">
+  <a class="btn btn-ghost" href="#map">Find my block</a>
+  <button class="btn btn-coral" id="cta-host-sticky">I'll host</button>
+</div>
 
 <dialog id="claim" class="sheet">
   <form method="dialog" id="claim-form" novalidate>
