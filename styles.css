@@ -179,3 +179,60 @@ input:focus,select:focus{outline:3px solid var(--orange);outline-offset:1px}
   .masthead .btn{margin-left:0;width:100%}
   .two{grid-template-columns:1fr}
 }
+/* top nav */
+.topnav{
+  max-width:1040px;margin:0 auto;padding:14px 18px 0;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.brand{font-family:var(--font-display);font-size:18px;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+.topnav .links{display:flex;gap:16px;font-size:14px;font-weight:700}
+.topnav .links a{color:var(--ink-soft);text-decoration:none}
+.topnav .links a:hover{color:var(--coral-deep);text-decoration:underline}
+
+/* welcome */
+.welcome{max-width:1040px;margin:0 auto;padding:34px 18px 8px}
+.kicker{font-family:var(--font-display);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-deep);margin:0 0 10px}
+.welcome h1{
+  font-family:var(--font-display);font-weight:400;color:var(--coral-ink);
+  font-size:clamp(32px,6vw,54px);line-height:1.02;margin:0 0 16px;max-width:15em;
+  text-shadow:2px 2px 0 rgba(58,46,36,.12);
+}
+.welcome .lede{font-size:18px;line-height:1.55;max-width:42em;margin:0 0 26px}
+.invites{display:grid;gap:14px;grid-template-columns:1fr}
+.invite{
+  background:rgba(255,255,255,.42);border:2px solid rgba(58,46,36,.16);
+  border-radius:16px;padding:20px 20px 22px;display:flex;flex-direction:column;
+}
+.invite-host{border-color:var(--coral);background:rgba(242,107,91,.12)}
+.invite h2{font-family:var(--font-display);font-weight:400;font-size:22px;margin:0 0 8px;line-height:1.2}
+.invite p{margin:0 0 16px;font-size:15px}
+.invite .btn{margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;text-decoration:none}
+.how{max-width:1040px;margin:26px auto 0;padding:0 18px}
+.how ol{margin:0;padding:0;list-style:none;display:grid;gap:10px 22px;grid-template-columns:1fr;counter-reset:step}
+.how li{position:relative;padding-left:40px;font-size:15px;counter-increment:step}
+.how li::before{
+  content:counter(step);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;
+  background:var(--ink);color:var(--sand);font-family:var(--font-display);font-size:13px;
+  display:flex;align-items:center;justify-content:center;
+}
+.how .more{margin:18px 0 0;font-size:15px;font-weight:700}
+.masthead{padding-top:34px;border-top:2px solid rgba(58,46,36,.14);margin-top:30px}
+
+/* about page */
+.page{max-width:720px;margin:0 auto;padding:34px 18px 60px}
+.page h1{font-family:var(--font-display);font-weight:400;color:var(--coral-ink);font-size:clamp(30px,5vw,44px);line-height:1.05;margin:0 0 18px;text-shadow:2px 2px 0 rgba(58,46,36,.12)}
+.page h2{font-family:var(--font-display);font-weight:400;font-size:22px;margin:36px 0 10px;line-height:1.2}
+.page p,.page li{font-size:17px;line-height:1.6}
+.page ul{padding-left:22px}
+.page li{margin-bottom:8px}
+.page .lede{font-size:19px}
+.page blockquote{margin:18px 0;padding:14px 18px;border-left:4px solid var(--coral);background:rgba(255,255,255,.4);border-radius:0 12px 12px 0;font-style:italic}
+.page .ctas{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 0}
+.page .ctas .btn{display:inline-flex;align-items:center;text-decoration:none}
+.refs li{margin-bottom:12px}
+.refs li strong{display:block}
+
+@media (min-width:760px){
+  .invites{grid-template-columns:1fr 1fr}
+  .how ol{grid-template-columns:1fr 1fr}
+}

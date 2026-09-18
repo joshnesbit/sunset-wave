@@ -279,7 +279,9 @@
     setTimeout(function () { document.getElementById('f-name').focus(); }, 30);
   }
 
-  document.getElementById('cta-host').addEventListener('click', function () { openClaim('host', null); });
+  Array.prototype.forEach.call(document.querySelectorAll('#cta-host, #cta-host-hero'), function (b) {
+    b.addEventListener('click', function () { openClaim('host', null); });
+  });
   dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
   Array.prototype.forEach.call(document.querySelectorAll('[data-close]'), function (b) {
     b.addEventListener('click', function () { dlg.close(); });
