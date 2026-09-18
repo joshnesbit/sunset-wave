@@ -72,7 +72,7 @@
     });
 
     W.ROWS.forEach(function (r, j) {
-      var lab = el('div', 'rowlabel', r.north);
+      var lab = el('div', 'rowlabel', r.north + '\u2013' + r.south);
       lab.style.gridColumn = '1';
       lab.style.gridRow = String(3 + j);
       grid.appendChild(lab);
@@ -279,7 +279,7 @@
     setTimeout(function () { document.getElementById('f-name').focus(); }, 30);
   }
 
-  Array.prototype.forEach.call(document.querySelectorAll('#cta-host, #cta-host-hero'), function (b) {
+  Array.prototype.forEach.call(document.querySelectorAll('#cta-host, #cta-host-hero, #cta-host-sticky'), function (b) {
     b.addEventListener('click', function () { openClaim('host', null); });
   });
   dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
