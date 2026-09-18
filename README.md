@@ -1,11 +1,11 @@
-# A Wave of 100 Gatherings
+# Sunset Wave: A Wave of 100 Gatherings
 
 Made with [Relational Builder](https://relationalbuilder.org), an open-source
 app builder for tools that strengthen neighborhood connection.
 
 ## Running it
 
-Open `index.html` in a browser — no build step needed.
+Open `index.html` in a browser, no build step needed. `about.html` is the About page; `materials/host-invitation.html` is the printable host invitation.
 
 ## About this repo
 
