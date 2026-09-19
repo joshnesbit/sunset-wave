@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>
+/* Hosts sometimes serve this page at a URL without a trailing slash (…/a-wave-of-100-gatherings).
+   Relative asset paths then resolve one level up and 404. Redirect to the slash form. */
+(function(){var p=location.pathname;if(location.protocol!=='file:'&&!/\/$/.test(p)&&!/\.[a-z0-9]+$/i.test(p)){location.replace(p+'/'+location.search+location.hash);}})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>sunset wave — 100 neighbor gatherings, Outer Sunset, March 20, 2027</title>
 <meta name="description" content="A wave of 100+ neighbor gatherings across the Outer Sunset on the spring equinox, Saturday March 20, 2027. Host one on your block, or join one near you.">
