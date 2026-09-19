@@ -144,7 +144,7 @@
         (hs.length > 1 ? ' are' : ' is') + ' helping on this block'));
     }
     var act = el('div', 'actions');
-    var b = el('button', 'btn btn-ghost', 'I\'ll help ' + h.name);
+    var b = el('button', 'btn btn-ghost', 'i\'ll help ' + h.name);
     b.type = 'button';
     b.addEventListener('click', function () { openClaim('helper', h.block); });
     act.appendChild(b);
@@ -157,10 +157,10 @@
     var w = el('div', 'waiting');
     w.appendChild(el('h3', null, W.label(blockId) + ' is waiting for a host'));
     w.appendChild(el('p', null, hs.map(function (x) { return x.name; }).join(' and ') +
-      ' said they\'d help — somebody just has to open the garage.'));
+      ' said they\'d help. somebody just has to open the garage.'));
     if (hs[0] && hs[0].note) w.appendChild(el('p', 'note', '“' + hs[0].note + '”'));
     var act = el('div', 'actions');
-    var b = el('button', 'btn btn-coral', 'I\'ll host this block');
+    var b = el('button', 'btn btn-coral', 'i\'ll host this block');
     b.type = 'button';
     b.addEventListener('click', function () { openClaim('host', blockId); });
     act.appendChild(b);
@@ -179,13 +179,13 @@
 
     if (!hh.length && !waiting.length) {
       var e = el('div', 'empty');
-      e.appendChild(el('p', null, 'No blocks yet. The first coral tile on this map is somebody\'s driveway — maybe yours.'));
+      e.appendChild(el('p', null, 'no blocks yet. the first coral tile on this map is somebody\'s driveway, maybe yours.'));
       roster.appendChild(e);
       return;
     }
 
-    roster.appendChild(el('h2', null, hh.length === 1 ? 'One block so far' : hh.length + ' blocks so far'));
-    roster.appendChild(el('p', 'sub', 'Each one picks its own hour. Walk over and say hi — that\'s the whole idea.'));
+    roster.appendChild(el('h2', null, hh.length === 1 ? 'one block so far' : hh.length + ' blocks so far'));
+    roster.appendChild(el('p', 'sub', 'each one picks its own hour. walk over and say hi, that\'s the whole idea.'));
     var cards = el('div', 'cards');
     hh.forEach(function (h) { cards.appendChild(hostCard(h)); });
     roster.appendChild(cards);
@@ -214,10 +214,10 @@
       hs.map(function (x) { return x.name; }).join(' and ') + ' already offered to help.'));
 
     var act = el('div', 'actions');
-    var help = el('button', 'btn btn-coral', 'I\'ll help ' + h.name);
+    var help = el('button', 'btn btn-coral', 'i\'ll help ' + h.name);
     help.type = 'button';
     help.addEventListener('click', function () { blockDlg.close(); openClaim('helper', id); });
-    var mine = el('button', 'btn btn-ghost', 'I\'ll host my own block');
+    var mine = el('button', 'btn btn-ghost', 'i\'ll host my own block');
     mine.type = 'button';
     mine.addEventListener('click', function () { blockDlg.close(); openClaim('host', null); });
     act.appendChild(mine);
@@ -252,13 +252,13 @@
       b.classList.toggle('on', b.dataset.mode === m);
     });
     document.getElementById('claim-title').textContent =
-      m === 'host' ? 'I\'ll host on my block' : 'I\'ll help on a block';
+      m === 'host' ? 'i\'ll host on my block' : 'i\'ll help on a block';
     document.getElementById('mode-hint').textContent = m === 'host'
       ? 'Your driveway, front steps, or a corner of the park. Two hours is plenty.'
       : 'Chairs, ice, a folding table, an extra pair of hands — a captain will connect you with the host.';
     document.getElementById('hour-wrap').hidden = m !== 'host';
     document.getElementById('submit').textContent =
-      m === 'host' ? 'Count my block in' : 'Count me in to help';
+      m === 'host' ? 'count my block in' : 'count me in to help';
   }
   Array.prototype.forEach.call(document.querySelectorAll('.mode'), function (b) {
     b.addEventListener('click', function () { setMode(b.dataset.mode); });
@@ -330,8 +330,8 @@
     var n = hostedBlocks().length;
     doneBody.appendChild(el('p', 'bignum', n + ' of 100'));
     doneBody.appendChild(el('h2', null, claim.kind === 'host'
-      ? 'Your block is on the map, ' + claim.name + '.'
-      : 'You\'re in, ' + claim.name + '.'));
+      ? 'your block is on the map, ' + claim.name + '.'
+      : 'you\'re in, ' + claim.name + '.'));
     doneBody.appendChild(el('p', null, claim.kind === 'host'
       ? W.label(claim.block) + ' · ' + W.hourLabel(claim.hour) + '. A captain will text you before Host Night — that\'s Saturday, March 6 at 4114 Judah, where you pick up your $200 and meet the other hosts on your avenue.'
       : 'A captain will connect you with whoever hosts ' + W.label(claim.block) + '. If nobody does by February, that person could be you.'));
@@ -342,7 +342,7 @@
       box.appendChild(el('p', null, near.host.name + ' is hosting ' +
         (near.d === 0 ? 'the same block' : near.d + (near.d === 1 ? ' block' : ' blocks') + ' away') +
         ' — ' + W.shortLabel(near.host.block) + ', ' + W.hourLabel(near.host.hour).toLowerCase() + '.'));
-      var b = el('button', 'btn btn-ghost', 'Say hi to ' + near.host.name);
+      var b = el('button', 'btn btn-ghost', 'say hi to ' + near.host.name);
       b.type = 'button';
       b.addEventListener('click', function () { dlg.close(); openBlock(near.host.block); });
       box.appendChild(b);
@@ -356,7 +356,7 @@
     doneBody.appendChild(share);
 
     var act = el('div', 'actions');
-    var again = el('button', 'btn btn-ghost', 'Add another block');
+    var again = el('button', 'btn btn-ghost', 'add another block');
     again.type = 'button';
     again.addEventListener('click', function () {
       document.getElementById('f-name').value = claim.name;
@@ -364,7 +364,7 @@
       document.getElementById('f-note').value = '';
       openClaim('host', null);
     });
-    var close = el('button', 'btn btn-coral', 'Back to the map');
+    var close = el('button', 'btn btn-coral', 'back to the map');
     close.type = 'button';
     close.addEventListener('click', function () { dlg.close(); });
     act.appendChild(again);
@@ -388,7 +388,7 @@
     claims = [];
     save();
     refreshAll();
-    document.querySelector('.muted').textContent = 'Map cleared — the next block to say yes is the first one.';
+    document.querySelector('.muted').textContent = 'map cleared. the next block to say yes is the first one.';
   });
 
   paintGrid();

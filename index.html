@@ -3,50 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sunset Wave — 100 neighbor gatherings, Outer Sunset, March 20, 2027</title>
+<title>sunset wave — 100 neighbor gatherings, Outer Sunset, March 20, 2027</title>
 <meta name="description" content="A wave of 100+ neighbor gatherings across the Outer Sunset on the spring equinox, Saturday March 20, 2027. Host one on your block, or join one near you.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F4E9D3'/%3E%3Cg fill='none' stroke='%233E86A6' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 22c1-6 5-11 11-12 6-1 11 2 11 7 0 3-2 5-5 5-2 0-3.5-1.5-3.5-3.5 0-1.5 1-2.5 2.5-2.5'/%3E%3Cpath d='M3 26c3 0 4-2.5 7-2.5s4 2.5 7 2.5 4-2.5 7-2.5 4 2.5 6 2.5'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-ocean" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 22c1-6 5-11 11-12 6-1 11 2 11 7 0 3-2 5-5 5-2 0-3.5-1.5-3.5-3.5 0-1.5 1-2.5 2.5-2.5"/>
+    <path d="M3 26c3 0 4-2.5 7-2.5s4 2.5 7 2.5 4-2.5 7-2.5 4 2.5 6 2.5"/>
+  </symbol>
+  <symbol id="i-hand" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 16V7.5a2 2 0 0 1 4 0V15"/>
+    <path d="M16 15V5.5a2 2 0 0 1 4 0V15"/>
+    <path d="M20 15V7.5a2 2 0 0 1 4 0v10"/>
+    <path d="M24 17.5c0 6-3.5 10-9 10-4 0-6.5-2-8.5-6L4 17a2 2 0 0 1 3.4-2L12 20v-4"/>
+    <path d="M6 8L4 6.5M7.5 4.5 7 2.5"/>
+  </symbol>
+</svg>
 
-<nav class="topnav" aria-label="Site">
-  <a class="brand" href="./index.html">Sunset Wave</a>
+<nav class="topnav" aria-label="site">
+  <a class="brand" href="./index.html"><span class="wordmark"><svg class="ico ico-ocean" aria-hidden="true"><use href="#i-ocean"/></svg>sunset wave<svg class="ico ico-hand" aria-hidden="true"><use href="#i-hand"/></svg></span></a>
   <div class="links">
-    <a href="#map">The map</a>
-    <a href="./about.html">About</a>
-    <a href="https://sunsetsocialclub.org">Sunset Social Club</a>
+    <a href="#map">the map</a>
+    <a href="./about.html">about</a>
+    <a href="https://sunsetsocialclub.org">sunset social club</a>
   </div>
 </nav>
 
 <section class="welcome">
-  <p class="kicker">Outer Sunset · Saturday, March 20, 2027 · the spring equinox</p>
-  <h1>A wave of 100 neighbor gatherings, one block at a time.</h1>
-  <p class="lede">Hi, neighbor. On March 20th, we're hosting 100+ small gatherings on our actual blocks, with the people we've lived next to for years. Coffee and donuts in a driveway. Chalk on the sidewalk. A pot of soup on the front steps. Nothing formal, nothing to permit. Just us, out front, getting a little bit closer.</p>
+  <p class="kicker">outer sunset · saturday, march 20, 2027 · the spring equinox</p>
+  <h1><span class="hi">hi, neighbor.</span>a wave of 100 neighbor gatherings, one block at a time.</h1>
+  <p class="lede">On March 20th, we're hosting 100+ small gatherings on our actual blocks, with the people we've lived next to for years. Coffee and donuts in a driveway. Chalk on the sidewalk. A pot of soup on the front steps. Nothing formal, nothing to permit. Just us, out front, getting a little bit closer.</p>
   <div class="invites">
     <div class="invite invite-host">
-      <h2>Host on your block</h2>
+      <h2><svg class="ico" aria-hidden="true"><use href="#i-hand"/></svg>host on your block</h2>
       <p>Tuck an invitation under a few doors, put something out, and see who shows up. Two hours is plenty. Every host gets $200 for whatever the block needs.</p>
-      <button class="btn btn-coral" id="cta-host-hero">I'll host on my block</button>
+      <button class="btn btn-coral" id="cta-host-hero">i'll host on my block</button>
     </div>
     <div class="invite invite-join">
-      <h2>Join a gathering</h2>
+      <h2><svg class="ico" aria-hidden="true"><use href="#i-ocean"/></svg>join a gathering</h2>
       <p>Find your block on the map. If a neighbor is already hosting, you're invited. Walk over on the day and say hi. If nobody is yet, lend a hand or take the block yourself.</p>
-      <a class="btn btn-ghost" href="#map">Find my block</a>
+      <a class="btn btn-ocean" href="#map">find my block</a>
     </div>
   </div>
 </section>
 
 <section class="how" aria-label="How it works">
   <ol>
-    <li><strong>It starts super simple.</strong> An invitation tucked under doors and doormats. A folding table. Coffee.</li>
-    <li><strong>A few or a few dozen neighbors show up.</strong> Someone looks out the window and smiles at what's unfolding.</li>
-    <li><strong>We meet the people next door.</strong> We find that we care about each other, and about our shared place.</li>
-    <li><strong>On March 20th we look down our corridors</strong> and see a wave of gatherings, from the park to Sloat, the ocean to 19th.</li>
+    <li><strong>it starts super simple.</strong> An invitation tucked under doors and doormats. A folding table. Coffee.</li>
+    <li><strong>a few or a few dozen neighbors show up.</strong> Someone looks out the window and smiles at what's unfolding.</li>
+    <li><strong>we meet the people next door.</strong> We find that we care about each other, and about our shared place.</li>
+    <li><strong>on march 20th we look down our corridors</strong> and see a wave of gatherings, from the park to Sloat, the ocean to 19th.</li>
   </ol>
-  <p class="more"><a href="./about.html">Read more about the idea, the Sunset Social Club, and where it comes from &rarr;</a></p>
+  <p class="more"><a href="./about.html">read more about the idea, the sunset social club, and where it comes from &rarr;</a></p>
 </section>
 
 <header class="masthead" id="map">
@@ -55,14 +69,14 @@
     <span class="of">of 100 blocks<br><em id="count-sub">said yes</em></span>
   </div>
   <div class="when">
-    <strong>Saturday, March 20, 2027</strong>
+    <strong>saturday, march 20, 2027</strong>
     <span>the spring equinox · all day, each block picks its hour</span>
   </div>
-  <button class="btn btn-coral" id="cta-host">I'll host on my block</button>
+  <button class="btn btn-coral" id="cta-host">i'll host on my block</button>
 </header>
 
 <main>
-  <p class="scrollhint">Swipe the map sideways to see every avenue. Tap a block to host it or say hi.</p>
+  <p class="scrollhint">swipe the map sideways to see every avenue. tap a block to host it or say hi.</p>
   <div class="mapwrap">
     <div class="grid" id="grid" role="group" aria-label="Map of Outer Sunset blocks. Columns are avenues from 48th by the ocean to 19th. Rows are the stretch between two cross streets, Lincoln at the top to Sloat at the bottom."></div>
   </div>
@@ -77,56 +91,57 @@
 </main>
 
 <footer class="foot">
+  <span class="wordmark"><svg class="ico ico-ocean" aria-hidden="true"><use href="#i-ocean"/></svg>sunset wave<svg class="ico ico-hand" aria-hidden="true"><use href="#i-hand"/></svg></span>
   <p class="steward"><span class="dot">J</span><span>Josh keeps this map. Say hi at <strong>Host Night, Saturday March 6</strong>, 4114 Judah, where hosts pick up their $200 and meet the others on their avenue.</span></p>
-  <p class="fine"><a href="./about.html">About Sunset Wave</a> · Sponsored by the <a href="https://sunsetsocialclub.org">Sunset Social Club</a> · open to any Outer Sunset resident, membership not required · more neighborhood goings-on at <a href="https://outersunset.today">outersunset.today</a></p>
-  <p class="fine muted">Example blocks are showing. <button class="linkbtn" id="reset">Clear them</button> before you share this.</p>
+  <p class="fine"><a href="./about.html">about sunset wave</a> · a project of the <a href="https://sunsetsocialclub.org">Sunset Social Club</a> · open to any Outer Sunset resident, membership not required · more neighborhood goings-on at <a href="https://outersunset.today">outersunset.today</a></p>
+  <p class="fine muted">example blocks are showing. <button class="linkbtn" id="reset">clear them</button> before you share this.</p>
 </footer>
 
 <div class="stickybar">
-  <a class="btn btn-ghost" href="#map">Find my block</a>
+  <a class="btn btn-ocean" href="#map">find my block</a>
   <button class="btn btn-coral" id="cta-host-sticky">I'll host</button>
 </div>
 
 <dialog id="claim" class="sheet">
   <form method="dialog" id="claim-form" novalidate>
     <div id="form-body">
-      <h2 id="claim-title">I'll host on my block</h2>
+      <h2 id="claim-title">i'll host on my block</h2>
       <div class="modes" role="tablist">
-        <button type="button" class="mode on" data-mode="host" role="tab">I'll host</button>
-        <button type="button" class="mode" data-mode="helper" role="tab">I'll help on a block</button>
+        <button type="button" class="mode on" data-mode="host" role="tab">i'll host</button>
+        <button type="button" class="mode" data-mode="helper" role="tab">i'll help on a block</button>
       </div>
       <p class="hint" id="mode-hint">Your driveway, front steps, or a corner of the park. Two hours is plenty.</p>
 
-      <label for="f-name">First name</label>
+      <label for="f-name">first name</label>
       <input id="f-name" name="name" autocomplete="given-name" required>
 
-      <label for="f-contact">Phone or email</label>
+      <label for="f-contact">phone or email</label>
       <input id="f-contact" name="contact" autocomplete="tel" required>
       <p class="hint">Goes to the club so a captain can reach you. Never shown on the map.</p>
 
       <div class="two">
         <div>
-          <label for="f-ave">Avenue</label>
+          <label for="f-ave">avenue</label>
           <select id="f-ave" name="ave"></select>
         </div>
         <div>
-          <label for="f-row">Between</label>
+          <label for="f-row">between</label>
           <select id="f-row" name="row"></select>
         </div>
       </div>
 
       <div id="hour-wrap">
-        <label for="f-hour">Roughly when</label>
+        <label for="f-hour">roughly when</label>
         <select id="f-hour" name="hour"></select>
       </div>
 
-      <label for="f-note">What you're thinking <span class="opt">(optional)</span></label>
+      <label for="f-note">what you're thinking <span class="opt">(optional)</span></label>
       <input id="f-note" name="note" placeholder="Coffee and donuts in the driveway">
 
       <p class="err" id="err" hidden></p>
       <div class="actions">
-        <button type="button" class="btn btn-ghost" data-close>Never mind</button>
-        <button type="submit" class="btn btn-coral" id="submit">Count my block in</button>
+        <button type="button" class="btn btn-ghost" data-close>never mind</button>
+        <button type="submit" class="btn btn-coral" id="submit">count my block in</button>
       </div>
     </div>
   </form>

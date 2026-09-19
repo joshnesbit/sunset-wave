@@ -1,4 +1,4 @@
-# Sunset Wave
+# sunset wave
 
 A wave of 100+ neighbor gatherings across San Francisco's Outer Sunset, all on one day: **Saturday, March 20, 2027**, the spring equinox.
 
@@ -11,7 +11,7 @@ Sponsored by the [Sunset Social Club](https://sunsetsocialclub.org). Open to any
 | Path | What it is |
 | --- | --- |
 | `index.html` | The landing page and the Wave map: a grid of Outer Sunset blocks where neighbors say "I'll host" or "I'll help." |
-| `about.html` | What Sunset Wave is, how hosting and joining work, the Sunset Social Club, and where the idea comes from. |
+| `about.html` | what sunset wave is, how hosting and joining work, the Sunset Social Club, and where the idea comes from. |
 | `app.js` | Map rendering, the claim form, the roster of hosts, and the block dialog. |
 | `blocks.js` | The geography: avenues 48th to 19th, cross streets Lincoln to Sloat, Sunset Blvd, and the reservoir. |
 | `seed.js` | Example blocks so the map isn't blank. Clear these before sharing. |
@@ -35,7 +35,7 @@ To print the host invitation, open `materials/host-invitation.html` and print to
 
 ## Lineage
 
-Sunset Wave follows the microgrant gathering recipe: small grants, real gatherings, neighbors with neighbors.
+sunset wave follows the microgrant gathering recipe: small grants, real gatherings, neighbors with neighbors.
 
 - [With Neighbors](https://withneighbors.org), a national effort supporting local microgrant gathering programs.
 - Microgrant Gatherings from Connective Tissue and the Trust for Civic Life.
